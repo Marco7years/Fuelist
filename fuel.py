@@ -12,12 +12,5 @@ class Fuel:
         self.price = price
         self.distance = distance
     
-    def print_date(self):
-        date = self.date_of_fuel
-        
-    
     def __str__(self):
-        return f"Date: {self.date_of_fuel}\nLitres: {self.litres}\nPrice: {self.price}\nDistance: {self.distance}"
-
-test_fuel = Fuel(None, 20.5, 18.7, 250)
-print(test_fuel)
+        return f"Date: {self.date_of_fuel.day}/{self.date_of_fuel.month}/{self.date_of_fuel.year}\nLitres: {self.litres}\nPrice: {self.price}\nDistance: {self.distance}"
